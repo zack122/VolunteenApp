@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -33,19 +35,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton createPost = findViewById(R.id.createPost);
-        createPost.setOnClickListener(new View.OnClickListener() {
+        ImageButton createPostButton = findViewById(R.id.createPost);
+        createPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 testText.setText("create a post :)");
                 testText.setTextColor(getResources().getColor(R.color.purple_700));
-               //createPost.setBackgroundColor(getResources().getColor(R.color.red));
+                CreatePost();
+
             }
         });
 
 
 
 
+
+    }
+
+
+
+    private void CreatePost(){
+        Intent intent = new Intent(this, CreatePostActivity.class);
+        startActivity(intent);
 
     }
 }
