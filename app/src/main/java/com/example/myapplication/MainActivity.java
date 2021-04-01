@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         switchToMapView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SwitchActivities();
+                GoToMapView();
 
             }
         });
 
     }
 
-    private void SwitchActivities(){
+    private void GoToMapView(){
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
