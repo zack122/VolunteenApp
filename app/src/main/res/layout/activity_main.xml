@@ -18,7 +18,7 @@
 
 
     <ImageButton
-        android:id="@+id/home"
+        android:id="@+id/mapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
@@ -26,14 +26,14 @@
         app:layout_constraintEnd_toStartOf="@id/createPost"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView"
-        app:srcCompat="@android:drawable/ic_media_previous" />
+        app:srcCompat="@android:drawable/ic_media_play" />
 
     <ImageButton
         android:id="@+id/createPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_add"
-        app:layout_constraintStart_toEndOf="@id/home"
+        app:layout_constraintStart_toEndOf="@id/mapButton"
         app:layout_constraintEnd_toStartOf="@id/search"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintBottom_toBottomOf="parent"

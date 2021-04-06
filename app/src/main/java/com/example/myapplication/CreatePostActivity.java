@@ -14,17 +14,8 @@ public class CreatePostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_post);
 
-        /*ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //BackToHomeScreen();
-            }
-        });*/
+
     }
 
-    /*private void BackToHomeScreen(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }*/
+
 }
