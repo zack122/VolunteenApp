@@ -332,7 +332,57 @@
                     android:ems="10"
                     android:hint="year"
                     android:inputType="date" />
+
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="57dp"
+                android:text="Time"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/startTimeTextInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Start"
+                    android:inputType="time" />
+
+
+                <Switch
+                    android:id="@+id/pmStartTimeSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="PM" />
+
+                <EditText
+                    android:id="@+id/endTimeTextInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="End"
+                    android:inputType="time" />
+
+                <Switch
+                    android:id="@+id/pmEndTimeSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="PM" />
+            </LinearLayout>
+
 
 
             <!--end of step 5 -->

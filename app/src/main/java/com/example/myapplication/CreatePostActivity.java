@@ -19,17 +19,25 @@ public class CreatePostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_post);
 
-        TextView createOpportunityTextView = findViewById(R.id.createOpportunityTextView);
+        TextView stepOneTextView = findViewById(R.id.stepOneText);
+        TextView stepTwoTextView = findViewById(R.id.stepTwoText);
+        TextView stepThreeTextView = findViewById(R.id.stepThreeText);
+        TextView stepFourTextView = findViewById(R.id.stepFourText);
+        TextView stepFiveTextView = findViewById(R.id.stepFiveText);
 
-        TextPaint paint = createOpportunityTextView.getPaint();
+        TextPaint paint = stepOneTextView.getPaint();
         float width = paint.measureText("Create Opportunity");
 
-        Shader textshader = new LinearGradient(0,0, 0, createOpportunityTextView.getTextSize()*2 ,
+        Shader textshader = new LinearGradient(0,0, 0, stepOneTextView.getTextSize()*1.2f ,
                 new int[]{
                         Color.parseColor("#0062F4"),
                         Color.parseColor("#327A26"),
                 }, null, Shader.TileMode.CLAMP);
-        createOpportunityTextView.getPaint().setShader(textshader);
+        stepOneTextView.getPaint().setShader(textshader);
+        stepTwoTextView.getPaint().setShader(textshader);
+        stepThreeTextView.getPaint().setShader(textshader);
+        stepFourTextView.getPaint().setShader(textshader);
+        stepFiveTextView.getPaint().setShader(textshader);
 
 
 
