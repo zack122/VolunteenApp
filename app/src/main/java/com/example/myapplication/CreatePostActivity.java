@@ -24,11 +24,14 @@ public class CreatePostActivity extends AppCompatActivity {
         TextView stepThreeTextView = findViewById(R.id.stepThreeText);
         TextView stepFourTextView = findViewById(R.id.stepFourText);
         TextView stepFiveTextView = findViewById(R.id.stepFiveText);
+        TextView stepSixTextView = findViewById(R.id.stepSixText);
+        TextView stepSevenTextView = findViewById(R.id.stepSevenText);
+
 
         TextPaint paint = stepOneTextView.getPaint();
         float width = paint.measureText("Create Opportunity");
 
-        Shader textshader = new LinearGradient(0,0, 0, stepOneTextView.getTextSize()*1.2f ,
+        Shader textshader = new LinearGradient(0,0, 0, 90 ,
                 new int[]{
                         Color.parseColor("#0062F4"),
                         Color.parseColor("#327A26"),
@@ -38,6 +41,11 @@ public class CreatePostActivity extends AppCompatActivity {
         stepThreeTextView.getPaint().setShader(textshader);
         stepFourTextView.getPaint().setShader(textshader);
         stepFiveTextView.getPaint().setShader(textshader);
+        stepSixTextView.getPaint().setShader(textshader);
+        stepSevenTextView.getPaint().setShader(textshader);
+
+
+
 
 
 

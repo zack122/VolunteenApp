@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
-                    android:text="Catagory"
+                    android:text="Category"
                     android:textSize="24sp" />
 
 
@@ -251,7 +251,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="your name"
+                android:hint="Bottom Text"
                 android:inputType="textPersonName"
                 android:text="" />
             <!--end of step 4 -->
@@ -341,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="57dp"
-                android:text="Time"
+                android:text="Time:"
                 android:textSize="18sp"/>
 
             <LinearLayout
@@ -386,6 +386,94 @@
 
 
             <!--end of step 5 -->
+
+            <!-- start of step 6 -->
+            <LinearLayout
+                android:id="@+id/step_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/stepSixImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/step_6" />
+
+                <TextView
+                    android:id="@+id/stepSixText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Contact Info"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/emailAddressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/emailAddressTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Email address"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/phoneNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/phoneNumberTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="phone" />
+
+            <!-- end of step 6 -->
+
+            <!-- start of step 7 -->
+
+            <LinearLayout
+                android:id="@+id/step_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/stepSevenImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/step_7" />
+
+                <TextView
+                    android:id="@+id/stepSevenText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Category"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <!-- end of step 7 -->
 
 
         </LinearLayout>
