@@ -14,8 +14,10 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:background="#FFFFFF">
 
         <LinearLayout
@@ -60,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
+                    android:textColor="@color/darkBlue"
                     android:text="Name an Opportunity"
                     android:textSize="24sp" />
 
@@ -96,6 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
+                    android:textColor="@color/darkBlue"
                     android:text="Your name"
                     android:textSize="24sp" />
 
@@ -134,7 +138,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
                     android:text="Category"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textColor="@color/darkBlue"/>
 
 
             </LinearLayout>
@@ -202,7 +207,7 @@
 
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/categories_sports"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -210,7 +215,7 @@
                     app:srcCompat="@drawable/category_sports" />
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/categories_recycling"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -241,7 +246,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
                     android:text="Location"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textColor="@color/darkBlue"/>
 
             </LinearLayout>
 
@@ -277,7 +283,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
                     android:text="Description"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textColor="@color/darkBlue"/>
 
             </LinearLayout>
 
@@ -298,7 +305,8 @@
                 android:layout_marginStart="57dp"
                 android:layout_weight="1"
                 android:text="Date:"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -342,7 +350,8 @@
                 android:layout_weight="1"
                 android:layout_marginStart="57dp"
                 android:text="Time:"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -408,7 +417,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
                     android:text="Contact Info"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textColor="@color/darkBlue"/>
 
 
             </LinearLayout>
@@ -418,6 +428,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="57dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 android:text="Email" />
 
             <EditText
@@ -434,7 +446,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="57dp"
-                android:text="Phone Number" />
+                android:text="Phone Number"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/phoneNumberTextInput"
@@ -467,18 +481,35 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
-                    android:text="Category"
+                    android:textColor="@color/green"
+                    android:text="Make sure you fill everything before hitting the 'Create' button"
                     android:textSize="24sp" />
 
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/green"
+                android:text="Create"
+
+                />
+
             <!-- end of step 7 -->
+
+
 
 
         </LinearLayout>
 
 
     </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
